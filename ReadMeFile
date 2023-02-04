@@ -11,7 +11,7 @@
     - RestAssured
     - Cucumber-java
     - Cucumber-junit
-    - Object Mapper (Jackson, GSON) Cerelization and Decerelization
+    - Object Mapper (Jackson, GSON) Serialization and De-Serialization
     - Selenium, Boni-Garcia (No Need for only API tests, could be useful when we do UI vs API testing)
 
 * Which plugin for to be able to run from terminal our code?
@@ -29,3 +29,14 @@
             Status code (first thing we need to check)
             Depending on a requirements, we will verify headers and body
             Body verifications: path, jsonpath, POJO, Java Classes, Hemcrest Matches
+
+# De-Serialization: JSON ---> Java Codes (Custom Classes or Collections)
+    In order to do it we use as() method which comes from restAssured
+    as() ---> method: Object Mappers (Jkson or Json)
+
+## How to run a project
+    1. Install Maven locally
+    2. Java JDK Installed
+    3.Get.exe Installed
+    4. Open the folder of the project and start termonal inside that folder
+    5. Run command ``mvn clean verify``
