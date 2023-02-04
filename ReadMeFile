@@ -1,0 +1,31 @@
+# DemoQa application project tests
+
+# Goal of the Project
+
+1. Create a framework that can be run through terminal and create a nice HTML report
+2. Practice core components of Request an Response in API Testing
+
+
+# pom.xml file
+* Which dependencies we need?
+    - RestAssured
+    - Cucumber-java
+    - Cucumber-junit
+    - Object Mapper (Jackson, GSON) Cerelization and Decerelization
+    - Selenium, Boni-Garcia (No Need for only API tests, could be useful when we do UI vs API testing)
+
+* Which plugin for to be able to run from terminal our code?
+    - Maven surefire plugin
+
+# API Tests:
+    * Two important topic to do this type of testing
+        - How to send our Request?
+            BaseURL + endPoint (path param and/or query param)
+            Headers info, content type, Authorizations
+            HTTP Request type: GET, POST, PUT, PATCH, DELETE
+            Might have a request body
+
+        - How to read and verify response?
+            Status code (first thing we need to check)
+            Depending on a requirements, we will verify headers and body
+            Body verifications: path, jsonpath, POJO, Java Classes, Hemcrest Matches
